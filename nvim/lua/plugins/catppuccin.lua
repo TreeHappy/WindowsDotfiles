@@ -2,7 +2,7 @@ return {
   { -- further customize the options set by the community
     "catppuccin",
     opts = {
-      transparent_background = true,
+      -- transparent_background = true,
       integrations = {
         sandwich = false,
         noice = true,
