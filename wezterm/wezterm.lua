@@ -5,11 +5,12 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.default_prog = { "pwsh.exe", "-NoLogo" }
-config.window_background_opacity = 0.9
-config.color_scheme = "Catppuccin Mocha"
+config.window_background_opacity = 0.6
+-- config.color_scheme = "Kanagawa (Gogh)"
+config.color_scheme = "Catppuccin Mocha (Gogh)"
 -- config.color_scheme = "Campbell (Gogh)"
-config.font_size = 22.0
-config.hide_tab_bar_if_only_one_tab = true
+config.font_size = 12.0
+-- config.hide_tab_bar_if_only_one_tab = true
 -- config.window_decorations = "RESIZE"
 config.font = wezterm.font("JetBrains Mono", { weight = "Bold", italic = false })
 
