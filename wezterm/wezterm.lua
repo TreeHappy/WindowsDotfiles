@@ -9,7 +9,7 @@ config.window_background_opacity = 0.9
 -- config.color_scheme = "Kanagawa (Gogh)"
 config.color_scheme = "Catppuccin Mocha (Gogh)"
 -- config.color_scheme = "Campbell (Gogh)"
-config.font_size = 12.0
+config.font_size = 16.0
 -- config.hide_tab_bar_if_only_one_tab = true
 -- config.window_decorations = "NONE | RESIZE"
 config.font = wezterm.font("JetBrains Mono", { weight = "Bold", italic = false })
@@ -23,6 +23,9 @@ config.window_padding = {
 
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
+config.show_tab_index_in_tab_bar = false
+config.show_new_tab_button_in_tab_bar = false
+config.hide_tab_bar_if_only_one_tab = false
 
 wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
 	local title = tab.active_pane.title
@@ -34,13 +37,13 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
 		return {
 			{ Background = { Color = "#1E1E2E" } },
 			{ Foreground = { Color = "#bac2de" } },
-			{ Text = (tab.tab_index + 1) .. ": " .. title .. " " },
+			{ Text = title },
 		}
 	else
 		return {
 			{ Background = { Color = "#11111b" } },
 			{ Foreground = { Color = "#313244" } },
-			{ Text = (tab.tab_index + 1) .. ": " .. title .. " " },
+			{ Text = title },
 		}
 	end
 end)
