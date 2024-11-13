@@ -36,6 +36,15 @@
 				{
 					"PackageIdentifier" : "zig.zig"
 				},
+				{
+					"PackageIdentifier" : "charmbracelet.glow"
+				},
+				{
+					"PackageIdentifier" : "charmbracelet.gum"
+				},
+				{
+					"PackageIdentifier" : "BurntSushi.ripgrep.GNU"
+				},
 			],
 			"SourceDetails" : 
 			{

@@ -1,7 +1,5 @@
--- Pull in the wezterm API
 local wezterm = require("wezterm")
 
--- This will hold the configuration.
 local config = wezterm.config_builder()
 
 config.default_prog = { "pwsh.exe", "-NoLogo" }
@@ -10,7 +8,7 @@ config.window_background_opacity = 0.9
 config.color_scheme = "Catppuccin Mocha (Gogh)"
 -- config.color_scheme = "Campbell (Gogh)"
 config.font_size = 16.0
--- config.hide_tab_bar_if_only_one_tab = true
+config.hide_tab_bar_if_only_one_tab = true
 -- config.window_decorations = "NONE | RESIZE"
 config.font = wezterm.font("JetBrains Mono", { weight = "Bold", italic = false })
 
@@ -48,5 +46,4 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
 	end
 end)
 
--- and finally, return the configuration to wezterm
 return config
