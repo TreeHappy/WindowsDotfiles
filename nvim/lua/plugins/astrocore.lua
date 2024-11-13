@@ -61,6 +61,11 @@ return {
           desc = "Close buffer from tabline",
         },
 
+        ["<Leader>fs"] = {
+          function() require("telescope").extensions.live_grep_args.live_grep_args() end,
+          desc = "Live Grep with args",
+          noremap = true,
+        },
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
         -- ["<Leader>b"] = { desc = "Buffers" },
