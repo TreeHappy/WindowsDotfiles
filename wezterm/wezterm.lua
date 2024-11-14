@@ -3,7 +3,7 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.default_prog = { "pwsh.exe", "-NoLogo" }
-config.window_background_opacity = 0.9
+config.window_background_opacity = 0.8
 -- config.color_scheme = "Kanagawa (Gogh)"
 config.color_scheme = "Catppuccin Mocha (Gogh)"
 -- config.color_scheme = "Campbell (Gogh)"
@@ -35,13 +35,13 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
 		return {
 			{ Background = { Color = "#1E1E2E" } },
 			{ Foreground = { Color = "#bac2de" } },
-			{ Text = title },
+			{ Text = " " .. title .. " " },
 		}
 	else
 		return {
 			{ Background = { Color = "#11111b" } },
 			{ Foreground = { Color = "#313244" } },
-			{ Text = title },
+			{ Text = " " .. title .. " " },
 		}
 	end
 end)
