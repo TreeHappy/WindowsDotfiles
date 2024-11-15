@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
-local background_opacity = 0.8
+local background_opacity = 0.9
 
 config.default_prog = { "pwsh.exe", "-NoLogo" }
 config.window_background_opacity = background_opacity
@@ -58,7 +58,7 @@ wezterm.on("format-tab-title", function(tab)
 			{ Text = wezterm.nerdfonts.ple_left_half_circle_thick },
 			{ Background = { AnsiColor = accent } },
 			{ Foreground = { Color = tab_bg } },
-			{ Text = tostring(tab.tab_index) },
+			{ Text = " " .. tostring(tab.tab_index) .. " " },
 			{ Background = { Color = tab_bg } },
 			{ Foreground = { AnsiColor = accent } },
 			{ Text = wezterm.nerdfonts.ple_right_half_circle_thick },
