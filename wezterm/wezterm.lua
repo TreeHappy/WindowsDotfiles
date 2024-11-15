@@ -11,6 +11,11 @@ config.font_size = 16.0
 config.hide_tab_bar_if_only_one_tab = true
 -- config.window_decorations = "NONE | RESIZE"
 config.font = wezterm.font("JetBrains Mono", { weight = "Bold", italic = false })
+config.colors = {
+	tab_bar = {
+		background = "rgba(0,0,0,0)",
+	},
+}
 
 config.window_padding = {
 	left = 0,
@@ -25,24 +30,37 @@ config.show_tab_index_in_tab_bar = false
 config.show_new_tab_button_in_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = false
 
-wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
-	local title = tab.active_pane.title
-
-	if tab.tab_title and #tab.tab_title > 0 then
-		title = tab.tab_title
-	end
+local tab_colors = {
+	"Navy",
+	"Red",
+	"Green",
+	"Olive",
+	"Maroon",
+	"Purple",
+	"Teal",
+	"Lime",
+	"Yellow",
+	"Blue",
+	"Fuchsia",
+	"Aqua",
+}
+local tab_bg = "rgba(22,22,22,0.8)"
+wezterm.on("format-tab-title", function(tab, max_width)
 	if tab.is_active then
-		return {
-			{ Background = { Color = "#1E1E2E" } },
-			{ Foreground = { Color = "#bac2de" } },
-			{ Text = " " .. title .. " " },
-		}
+		local accent = tab_colors[(tab.tab_index % #tab_colors) + 1]
+		return wezterm.format({
+			{ Background = { Color = tab_bg } },
+			{ Foreground = { AnsiColor = accent } },
+			{ Text = "" .. wezterm.nerdfonts.ple_left_half_circle_thick },
+			{ Background = { AnsiColor = accent } },
+			{ Foreground = { Color = tab_bg } },
+			{ Text = tostring(tab.tab_index) },
+			{ Background = { Color = tab_bg } },
+			{ Foreground = { AnsiColor = accent } },
+			{ Text = wezterm.nerdfonts.ple_right_half_circle_thick },
+		})
 	else
-		return {
-			{ Background = { Color = "#11111b" } },
-			{ Foreground = { Color = "#313244" } },
-			{ Text = " " .. title .. " " },
-		}
+		return " " .. tab.tab_index .. " "
 	end
 end)
 
