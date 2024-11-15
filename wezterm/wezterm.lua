@@ -1,9 +1,10 @@
 local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
+local background_opacity = 0.8
 
 config.default_prog = { "pwsh.exe", "-NoLogo" }
-config.window_background_opacity = 0.8
+config.window_background_opacity = background_opacity
 -- config.color_scheme = "Kanagawa (Gogh)"
 config.color_scheme = "Catppuccin Mocha (Gogh)"
 -- config.color_scheme = "Campbell (Gogh)"
@@ -44,14 +45,16 @@ local tab_colors = {
 	"Fuchsia",
 	"Aqua",
 }
-local tab_bg = "rgba(22,22,22,0.8)"
-wezterm.on("format-tab-title", function(tab, max_width)
+
+local tab_bg = "rgba(0,0,0,0)"
+
+wezterm.on("format-tab-title", function(tab)
 	if tab.is_active then
 		local accent = tab_colors[(tab.tab_index % #tab_colors) + 1]
 		return wezterm.format({
 			{ Background = { Color = tab_bg } },
 			{ Foreground = { AnsiColor = accent } },
-			{ Text = "" .. wezterm.nerdfonts.ple_left_half_circle_thick },
+			{ Text = wezterm.nerdfonts.ple_left_half_circle_thick },
 			{ Background = { AnsiColor = accent } },
 			{ Foreground = { Color = tab_bg } },
 			{ Text = tostring(tab.tab_index) },
@@ -60,7 +63,18 @@ wezterm.on("format-tab-title", function(tab, max_width)
 			{ Text = wezterm.nerdfonts.ple_right_half_circle_thick },
 		})
 	else
-		return " " .. tab.tab_index .. " "
+		local accent = "Grey"
+		return wezterm.format({
+			{ Background = { Color = tab_bg } },
+			{ Foreground = { AnsiColor = accent } },
+			{ Text = wezterm.nerdfonts.ple_left_half_circle_thick },
+			{ Background = { AnsiColor = accent } },
+			{ Foreground = { Color = tab_bg } },
+			{ Text = tostring(tab.tab_index) },
+			{ Background = { Color = tab_bg } },
+			{ Foreground = { AnsiColor = accent } },
+			{ Text = wezterm.nerdfonts.ple_right_half_circle_thick },
+		})
 	end
 end)
 

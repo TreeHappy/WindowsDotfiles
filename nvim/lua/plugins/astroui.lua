@@ -40,7 +40,7 @@ return {
       GitChange = "",
       GitConflict = "",
       GitDelete = "",
-      GitIgnored = "◌",
+      GitIgnored = "",
       GitRenamed = "➜",
       GitStaged = "✓",
       GitUnstaged = "✗",
