@@ -45,7 +45,7 @@ config.show_new_tab_button_in_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = false
 config.default_cursor_style = "BlinkingBar"
 -- config.font = wezterm.font("Fira Code IF", { weight = "Light", italic = false })
-config.font = wezterm.font("JetBrains Mono", { weight = "Light", italic = false })
+config.font = wezterm.font("JetBrains Mono", { weight = "Bold", italic = false })
 config.colors = {
 	tab_bar = {
 		background = "rgba(0,0,0,0)",
