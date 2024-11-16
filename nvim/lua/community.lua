@@ -13,4 +13,5 @@ return {
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
   { import = "astrocommunity.motion.mini-move" },
+  { import = "astrocommunity.motion.marks-nvim" },
 }
