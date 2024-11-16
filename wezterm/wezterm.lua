@@ -1,6 +1,6 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
-local background_opacity = 0.9
+local background_opacity = 0.6
 local tab_bg = "rgba(0,0,0,0)"
 local tab_colors = {
 	"Navy",
