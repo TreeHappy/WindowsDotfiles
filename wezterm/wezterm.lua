@@ -18,21 +18,21 @@ local tab_colors = {
 }
 
 local animal_emojis = {
-	"🐶", -- Dog Face
+	"🐸", -- Frog Face
 	"🐱", -- Cat Face
-	"🐭", -- Mouse Face
-	"🐹", -- Hamster
-	"🐰", -- Rabbit Face
 	"🦊", -- Fox Face
+	"🐹", -- Hamster
+	"🐭", -- Mouse Face
+	"🐰", -- Rabbit Face
 	"🐻", -- Bear Face
 	"🐼", -- Panda Face
 	"🐨", -- Koala
 	"🐯", -- Tiger Face
 	"🦁", -- Lion Face
-	"🐸", -- Frog Face
+	"🐶", -- Dog Face
 }
 
--- config.window_decorations = "NONE | RESIZE"
+config.window_decorations = "NONE | RESIZE"
 config.default_prog = { "pwsh.exe", "-NoLogo" }
 config.window_background_opacity = background_opacity
 config.color_scheme = "Catppuccin Mocha (Gogh)"
