@@ -14,4 +14,9 @@ return {
   { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
   { import = "astrocommunity.motion.mini-move" },
   { import = "astrocommunity.motion.marks-nvim" },
+  { import = "astrocommunity.colorscheme.eldritch-nvim" },
+  { import = "astrocommunity.colorscheme.lackluster-nvim" },
+  { import = "astrocommunity.colorscheme.miasma-nvim" },
+  { import = "astrocommunity.colorscheme.nightfox-nvim" },
+  { import = "astrocommunity.colorscheme.oxocarbon-nvim" },
 }

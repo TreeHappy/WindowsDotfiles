@@ -1,6 +1,6 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
-local background_opacity = 0.6
+local background_opacity = 0.7
 local tab_bg = "rgba(0,0,0,0)"
 local tab_colors = {
 	"Navy",
@@ -35,7 +35,9 @@ local animal_emojis = {
 config.window_decorations = "NONE | RESIZE"
 config.default_prog = { "pwsh.exe", "-NoLogo" }
 config.window_background_opacity = background_opacity
-config.color_scheme = "Catppuccin Mocha (Gogh)"
+config.color_scheme = "Elementary (Gogh)"
+-- config.color_scheme = "Oxocarbon Dark (Gogh)"
+-- config.color_scheme = "Catppuccin Mocha (Gogh)"
 config.font_size = 12.0
 config.hide_tab_bar_if_only_one_tab = true
 config.use_fancy_tab_bar = false
