@@ -18,5 +18,7 @@ return {
   { import = "astrocommunity.colorscheme.lackluster-nvim" },
   { import = "astrocommunity.colorscheme.miasma-nvim" },
   { import = "astrocommunity.colorscheme.nightfox-nvim" },
-  { import = "astrocommunity.colorscheme.oxocarbon-nvim" },
+  -- { import = "astrocommunity.media.image-nvim" },
+  -- { import = "astrocommunity.git.fugit2-nvim" },
+  { import = "astrocommunity.git.diffview-nvim" },
 }

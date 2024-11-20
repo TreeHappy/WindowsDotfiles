@@ -10,6 +10,9 @@
 					"PackageIdentifier" : "Git.Git"
 				},
 				{
+					"PackageIdentifier" : "sxyazi.yazi"
+				},
+				{
 					"PackageIdentifier" : "Neovim.Neovim"
 				},
 				{
