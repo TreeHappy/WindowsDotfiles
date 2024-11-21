@@ -3,7 +3,7 @@ return {
     "render-markdown.nvim",
     opts = {
       indent = {
-        enabled = true,
+        enabled = false,
         per_level = 2,
         skip_level = 0,
         skip_heading = false,
@@ -25,10 +25,15 @@ return {
           scope_highlight = nil,
         },
       },
-      quote = { repeat_linebreak = true },
+      quote = {
+        enabled = true,
+        highlight = "RenderMarkdownQuote",
+        background = "black",
+        repeat_linebreak = true,
+      },
       win_options = {
         showbreak = { default = "", rendered = "  " },
-        breakindent = { default = false, rendered = true },
+        breakindent = { default = true, rendered = true },
         breakindentopt = { default = "", rendered = "" },
       },
     },

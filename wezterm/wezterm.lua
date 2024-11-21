@@ -1,6 +1,6 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
-local background_opacity = 0.6
+local background_opacity = 0.95
 local tab_bg = "rgba(0,0,0,0)"
 local tab_colors = {
 	"Navy",
@@ -17,6 +17,7 @@ local tab_colors = {
 	"Aqua",
 }
 
+-- [README](~/.config/README.md)
 local animal_emojis = {
 	"🐱", -- Cat Face
 	"🐸", -- Frog Face
@@ -35,7 +36,7 @@ local animal_emojis = {
 -- config.window_decorations = "NONE | RESIZE"
 config.default_prog = { "pwsh.exe", "-NoLogo" }
 config.window_background_opacity = background_opacity
--- config.color_scheme = "Elementary (Gogh)"
+-- config.window_background_image = "c:/Users/Nicolas/Pictures/blade-runner.jpg"
 config.color_scheme = "Catppuccin Mocha (Gogh)"
 config.font_size = 12.0
 config.hide_tab_bar_if_only_one_tab = true
@@ -46,13 +47,16 @@ config.show_new_tab_button_in_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = false
 config.default_cursor_style = "BlinkingBar"
 -- config.font = wezterm.font("Fira Code IF", { weight = "Light", italic = false })
-config.font = wezterm.font("JetBrains Mono", { weight = "Bold", italic = false })
+config.font = wezterm.font("JetBrains Mono", { italic = false })
+-- config.font = wezterm.font("JetBrains Mono", { weight = "Bold", italic = false })
+
 config.colors = {
-	background = "black",
+	-- background = "black",
 	tab_bar = {
 		background = "rgba(0,0,0,0)",
 	},
 }
+
 config.window_padding = {
 	left = 0,
 	right = 0,

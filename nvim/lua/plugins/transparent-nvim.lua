@@ -3,10 +3,12 @@ return {
   lazy = false,
   opts = {
     extra_groups = {
-      "NvimTreeNormal",
+      -- "NvimTreeNormal",
     },
     exclude_groups = {
+      "NormalFloat",
       -- "SignColumn",
+      -- "NvimTreeNormal",
       -- "Comment",
       -- "LineNr",
       -- "CursorLine",

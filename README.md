@@ -7,15 +7,16 @@
 > [!Danger]
 > **test**
 
-```lua
-local x = 10
-```
+> [!NOTE]
+> ```lua
+> local x = 10
+> ```
 
 * xkjlfkjsf
 
   * kjsfljs
 
-  * ljasflkjs
+  - ljasflkjs
 
 Call the scripts
 
@@ -35,3 +36,14 @@ kjsfkljasflkj
 - [x] Checked
 - [-] Todo
 - [~] Custom
+
+[test](./install.sh)
+
+kljasflkkj [^1]
+lkjsafkl
+: lklsjf
+
+
+---------
+
+[^1]: test

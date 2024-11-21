@@ -3,6 +3,7 @@ return {
     "catppuccin",
     opts = {
       transparent_background = vim.g.transparent_enabled,
+      flavour = "mocha",
       dim_inactive = {
         enabled = true,
         shade = "dark",
@@ -20,6 +21,7 @@ return {
         },
         neotest = true,
         neotree = true,
+        nvimtree = true,
         notify = true,
         flash = true,
         cmp = true,
