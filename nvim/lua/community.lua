@@ -21,4 +21,5 @@ return {
   -- { import = "astrocommunity.media.image-nvim" },
   -- { import = "astrocommunity.git.fugit2-nvim" },
   { import = "astrocommunity.git.diffview-nvim" },
+  { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
 }
