@@ -6,6 +6,18 @@
 		{
 			"Packages" : 
 			[
+			  {
+					"PackageIdentifier" : "ajeetdsouza.zoxide"
+				},
+				{
+					"PackageIdentifier" : "sharkdp.bat"
+				},
+				{
+					"PackageIdentifier" : "sharkdp.fd"
+				},
+				{
+					"PackageIdentifier" : "eza-community.eza"
+				},
 				{
 					"PackageIdentifier" : "Git.Git"
 				},
@@ -44,6 +56,9 @@
 				},
 				{
 					"PackageIdentifier" : "charmbracelet.gum"
+				},
+				{
+					"PackageIdentifier" : "ImageMagick.Q16"
 				},
 				{
 					"PackageIdentifier" : "BurntSushi.ripgrep.GNU"
