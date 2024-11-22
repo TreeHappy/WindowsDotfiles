@@ -10,3 +10,6 @@ carapace _carapace powershell | Out-String | Invoke-Expression
 carapace gh powershell | Out-String | Invoke-Expression
 carapace go powershell | Out-String | Invoke-Expression
 
+Set-Alias ls eza
+Set-Alias cat bat
+
