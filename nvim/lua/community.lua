@@ -22,4 +22,7 @@ return {
   -- { import = "astrocommunity.git.fugit2-nvim" },
   { import = "astrocommunity.git.diffview-nvim" },
   { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
+  { import = "astrocommunity.workflow.precognition-nvim" },
+  { import = "astrocommunity.workflow.hardtime-nvim" },
+  { import = "astrocommunity.workflow.bad-practices-nvim" },
 }
